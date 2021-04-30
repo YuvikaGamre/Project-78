@@ -1,40 +1,29 @@
 <html>
     <head>
-        <title>
-            class 78
-        </title>
+        <title></title>
     </head>
     <body>
-        <p>ARRAY OF FRUITS
-            <h4 id="A"></h4>
-        </p>
-        <hr>
-        <p>FIRST FRUIT
-            <h4 id="B"></h4>
-        </p>
-        <hr>
-        <p>SECOND FRUIT
-            <h4 id="C"></h4>
-        </p>
-        <hr>
-        <p>
-            <h4 id="D"></h4>
-        </p>
-   </body>
-    <script>
-        var x=["Mango","Grapes","Banana","Watermelon","Apple"];
-        console.log (x);
-        document.getElementById("A").innerHTML=x;
-        var y=x[0];
-        var z=x[1];
-        console.log (y);
-        console.log (z);
-        document.getElementById("B").innerHTML=y;
-        document.getElementById("C").innerHTML=z;
-        var p=x.length;
-        console.log (p);
-        document.getElementById("D").innerHTML=p;
-        x.push("Kiwi");
-        console.log (x);   
-    </script>
+        <center>
+            <h1>My Cartoon Book </h1>
+            <img id="A" style="width: 30%;" src="https://static.wikia.nocookie.net/disneyprincess/images/2/20/Line_up_2019.png/revision/latest/scale-to-width-down/500?cb=20200727033838" alt="">
+        <h4 id="B"></h4>
+        <button onclick="fun()" >NEXT PRINCESS</button>
+        </center>
+        <script>
+            var img=["https://static.wikia.nocookie.net/disneyprincess/images/2/20/Line_up_2019.png/revision/latest/scale-to-width-down/500?cb=20200727033838","https://upload.wikimedia.org/wikipedia/en/e/e1/Snow_white_disney.png","https://i.pinimg.com/originals/45/f4/81/45f4818686e5b10f64434b446a90b5fe.jpg","https://m.media-amazon.com/images/M/MV5BNDliY2E1MjUtNzZkOS00MzJlLTgyOGEtZDg4MTI1NzZkMTBhXkEyXkFqcGdeQXVyNjMwMzc3MjE@._V1_.jpg"]
+            var names=["Disney Princes","Snow White","Cindrella","Mulan"];
+            var i=0;
+            function fun(){
+                i++;
+                var E=4;
+                if(i==E){
+                    i=0
+                }
+                var up=img[i];
+                var down=names[i];
+                document.getElementById("A").src=up;
+                document.getElementById("B").innerHTML=down;
+            }
+        </script>
+    </body>
 </html>
