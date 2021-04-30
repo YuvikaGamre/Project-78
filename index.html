@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            class 78
+        </title>
+    </head>
+    <body>
+        <p>ARRAY OF FRUITS
+            <h4 id="A"></h4>
+        </p>
+        <hr>
+        <p>FIRST FRUIT
+            <h4 id="B"></h4>
+        </p>
+        <hr>
+        <p>SECOND FRUIT
+            <h4 id="C"></h4>
+        </p>
+        <hr>
+        <p>
+            <h4 id="D"></h4>
+        </p>
+   </body>
+    <script>
+        var x=["Mango","Grapes","Banana","Watermelon","Apple"];
+        console.log (x);
+        document.getElementById("A").innerHTML=x;
+        var y=x[0];
+        var z=x[1];
+        console.log (y);
+        console.log (z);
+        document.getElementById("B").innerHTML=y;
+        document.getElementById("C").innerHTML=z;
+        var p=x.length;
+        console.log (p);
+        document.getElementById("D").innerHTML=p;
+        x.push("Kiwi");
+        console.log (x);   
+    </script>
+</html>
